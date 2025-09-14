@@ -1,3 +1,4 @@
+/*hero section*/
 .hero {
   width: 100%;
   height: 871px;
@@ -89,11 +90,11 @@
   height: 62px;
 }
 
+/*section-divider*/
 .section-divider {
   position: relative;
   width: 100%;
   height: 80px;
-  color: red;
 }
 
 .wave-divider {
@@ -112,6 +113,7 @@
   left: 0;
 }
 
+/*sub-hero*/
 .sub-hero {
   position: relative;
   width: 100%;
@@ -133,7 +135,6 @@
   flex: 1;
   width: 100%;
   height: auto;
-  padding: 0 33px;
 }
 
 .sub-hero-image-container img {
@@ -149,7 +150,7 @@
 }
 
 .sub-hero-text-container h2 {
-  font-family: Bree Serif;
+  font-family: "Bree Serif", serif;
   font-weight: 400;
   font-style: Regular;
   font-size: 40px;
@@ -168,10 +169,129 @@
   margin: 20px 0;
 }
 
-sub-hero-text-container p {
+.sub-hero-text-container p {
+  color: #6c757d;
   font-weight: 400;
   font-style: Regular;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0%;
+}
+
+.sub-hero-text-container span {
+  font-weight: 600;
+}
+
+/*features section*/
+
+.features {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 154.5px 0;
+}
+
+.features-content {
+  max-width: 1205px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 66px;
+}
+
+.features-content-text-container {
+  min-width: 478px;
+}
+
+.features-content-text-container h2 {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 40px;
+
+  line-height: 51.24px;
+  letter-spacing: 0%;
+  margin-bottom: 49.3px;
+}
+
+.features-content-text-container h2 span {
+  color: #4fa481;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.feature-item {
+  display: flex;
+  gap: 30px;
+}
+
+.feature-text {
+  border-left: 2px solid #4fa481;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.feature-icon-container {
+  min-width: 90px;
+  min-height: 90px;
+  background-color: #4fa4811a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.feature-icon-container img {
+  height: 40px;
+  width: auto;
+}
+
+.feature-text h5 {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+
+.feature-text p {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.features-content-image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #46826b66;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.features-image-cover {
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.features-image {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
 }
