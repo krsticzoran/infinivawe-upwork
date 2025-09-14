@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Work Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 137px;
+  background-color: #fff;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 179px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 44.5px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: #1c1c1c;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.btn-project {
+  border-radius: 46px;
+  background-color: #4fa481;
+  padding: 15px 20px;
+  color: #ffffff;
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.btn-project img {
+  width: 14.15px;
+  height: 14.15px;
+  object-fit: contain;
+  display: block;
+}
+
+.contact-link {
+  width: 327px;
+  height: 81px;
+  border-radius: 40px;
+  background: #4fa4811a;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-link .icon-container {
+  width: 49px;
+  height: 49px;
+  border-radius: 32.5px;
+  background: #003b45;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.contact-link .icon-container img {
+  width: 26.96px;
+  height: 26.01px;
+}
+
+.contact-link h5 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21.96px;
+  letter-spacing: 0;
+  color: #4fa481;
+  padding-bottom: 0.95px;
+}
+
+.contact-link p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 36.6px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
