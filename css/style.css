@@ -228,6 +228,7 @@ footer {
   top: -30px;
   left: 0;
   z-index: 1;
+  max-width: 100%;
 }
 
 .footer-bottom p {

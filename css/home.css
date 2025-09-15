@@ -624,6 +624,7 @@
 
 .client-vision-image-container {
   max-width: 50%;
+  min-width: 50%;
   max-height: 402px;
   padding: 5px 0;
   position: relative;
@@ -672,6 +673,58 @@
   border-left: 5px solid #ffffff;
   padding-left: 5px;
   color: #ffffff;
+}
+
+@media (min-width: 1500px) {
+  .client-vision-section {
+    height: 462px;
+  }
+  .client-vision-image-container {
+    max-height: 442px;
+  }
+
+  .client-vision-text-container {
+    max-height: 442px;
+  }
+}
+
+@media (min-width: 1750px) {
+  .client-vision-section {
+    height: 482px;
+  }
+  .client-vision-image-container {
+    max-height: 462px;
+  }
+
+  .client-vision-text-container {
+    max-height: 462px;
+  }
+}
+
+@media (min-width: 1750px) {
+  .client-vision-section {
+    height: 502px;
+  }
+  .client-vision-image-container {
+    max-height: 482px;
+  }
+
+  .client-vision-text-container {
+    max-height: 482px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .client-vision-section {
+    height: 522px;
+  }
+  .client-vision-image-container {
+    max-height: 502px;
+  }
+
+  .client-vision-text-container {
+    max-height: 502px;
+  }
 }
 
 /*subscription section*/
