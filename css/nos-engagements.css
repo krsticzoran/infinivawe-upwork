@@ -305,8 +305,121 @@
   flex-direction: column;
   gap: 12px;
   color: #f5f5f5;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
 }
 
 .accessibility-paragrpah-container :last-child {
   color: #5bbe95;
+  font-weight: 600;
+}
+
+/*solidarity section */
+.solidarity-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  position: relative;
+}
+
+.solidarity-right-bg {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  bottom: 80px;
+  width: 40%;
+  background: #46826b;
+  z-index: 1;
+  border-bottom-left-radius: 20px;
+}
+.solidarity-container {
+  max-width: 1284px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.solidarity-text-container {
+  min-width: 500px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-right: 5px;
+}
+
+.solidarity-text-container h2 {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 40px;
+  line-height: 51.24px;
+  letter-spacing: 0%;
+}
+
+.solidarity-text-container h2 span {
+  color: #4fa481;
+}
+
+.solidarity-text-container p {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.solidarity-text-h3-container {
+  background-color: #edf6f2;
+  padding: 10px 10px 10px 5px;
+  margin-right: -10px;
+}
+
+.solidarity-text-h3-container :first-child {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+
+  line-height: 30px;
+  letter-spacing: -0.4px;
+
+  color: #386956;
+}
+
+.solidarity-text-h3-container :last-child {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000 !important;
+}
+
+.solidarity-text-container :last-child {
+  font-weight: 500;
+  font-style: Italic;
+  color: #46826b;
+}
+
+.solidarity-image-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.solidarity-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
