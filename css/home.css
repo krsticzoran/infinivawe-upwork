@@ -452,6 +452,7 @@
 
 .mission-section {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   padding: 110px 0;
@@ -543,6 +544,13 @@
 }
 
 .mission-icon-container {
+  position: absolute;
+  right: calc(16% - 100px);
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.mission-icon-container img {
   width: 278px;
 }
 
