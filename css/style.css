@@ -381,6 +381,14 @@ nav > ul {
   .header-actions {
     display: none;
   }
+  .contact-link {
+    width: fit-content;
+    height: fit-content;
+  }
+  .btn-project {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (min-width: 1201px) {
   .hamburger {
