@@ -411,7 +411,7 @@
     width: 90%;
   }
   .features-content-text-container {
-    width: 45%;
+    min-width: 45%;
   }
 }
 
@@ -420,7 +420,7 @@
     flex-direction: column;
   }
   .features-content-text-container {
-    width: 100%;
+    min-width: 100%;
   }
 }
 
@@ -584,6 +584,22 @@
 
 .benefit-card-text p span {
   font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .benefit-arrow-right {
+    display: none;
+  }
+  .benefits-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-content h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 /*mission-section*/
