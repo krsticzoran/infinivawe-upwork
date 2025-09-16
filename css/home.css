@@ -1,7 +1,7 @@
 /*hero section*/
 .hero {
   width: 100%;
-  height: calc(100dvh-137px);
+  height: calc(100vh - 137px);
 
   background: linear-gradient(
     270deg,
