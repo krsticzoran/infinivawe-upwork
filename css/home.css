@@ -699,7 +699,7 @@
 
 .mission-icon-container {
   position: absolute;
-  right: calc(16% - 100px);
+  right: calc((100vw - 1177px) / 4);
   top: 50%;
   transform: translate(50%, -50%);
 }
