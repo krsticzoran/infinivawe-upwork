@@ -1,7 +1,7 @@
 /*hero section*/
 .hero {
   width: 100%;
-  height: calc(100vh - 137px);
+  height: 100dvh;
 
   background: linear-gradient(
     270deg,
@@ -22,10 +22,11 @@
   justify-content: center;
   height: 660px;
   position: relative;
-  gap: 25px;
+  gap: 50px;
 }
 
 .text-content {
+  margin-top: -137px;
   gap: 25px;
   display: flex;
   flex-direction: column;
@@ -94,8 +95,8 @@
 }
 
 @media (max-width: 1600px) {
-  .hero {
-    height: calc(100dvh - 123px);
+  .text-content {
+    margin-top: -123px;
   }
 }
 
