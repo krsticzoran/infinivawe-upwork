@@ -502,6 +502,25 @@ footer {
   z-index: 2;
 }
 
+@media (max-width: 1400px) {
+  .footer-top {
+    max-width: 90%;
+  }
+  .footer-bottom img {
+    top: -16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-bottom img {
+    top: -8px;
+  }
+}
+
 /*subscription section*/
 
 .subscription-section {
@@ -550,15 +569,11 @@ footer {
 }
 
 @media (max-width: 1200px) {
-  .subscription-image {
-  }
   .subscription-text-container {
     padding: 20px;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-  }
-  .subscription-content {
   }
 }
 
