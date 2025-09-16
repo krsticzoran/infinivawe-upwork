@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 660px;
+
   position: relative;
   gap: 50px;
 }
@@ -30,6 +30,8 @@
   gap: 25px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .text-content h1 {
   font-family: "Bree Serif", serif;
@@ -97,6 +99,49 @@
 @media (max-width: 1600px) {
   .text-content {
     margin-top: -123px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text-content h1 {
+    width: calc(100vw - 10%);
+  }
+  .hero p {
+    width: calc(100vw - 10%);
+  }
+}
+
+@media (max-width: 768px) {
+  .text-content h1 {
+    font-size: 36px;
+    line-height: 46px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .highlight-secondary {
+    line-height: 46px;
+  }
+
+  .hero p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 20px;
+  }
+
+  .hero-content {
+    gap: 40px;
+  }
+
+  .text-content {
+  }
+
+  .hero-content a {
+    font-size: 16px;
+    padding: 12px 16px;
+    width: auto;
+    height: auto;
   }
 }
 
