@@ -59,6 +59,7 @@ nav > ul {
 .active-link {
   color: #46826b;
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .btn-project {
