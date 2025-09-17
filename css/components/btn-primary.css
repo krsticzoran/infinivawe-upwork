@@ -1,0 +1,27 @@
+/* btn */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 46px;
+  background-color: #46826b;
+  padding: 15px 20px;
+  color: #ffffff;
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  box-shadow: 0px 13px 26.7px 0px #4fa48112;
+  width: fit-content;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .btn-primary {
+    font-size: 16px;
+    padding: 12px 16px;
+    width: fit-content;
+    height: auto;
+  }
+}
