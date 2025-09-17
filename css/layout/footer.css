@@ -59,6 +59,10 @@ footer {
   padding: 0;
 }
 
+.footer-links nav ul {
+  gap: 0;
+}
+
 .footer-links ul {
   color: #1c1c1c;
   display: flex;

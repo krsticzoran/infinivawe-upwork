@@ -10,7 +10,7 @@ hamburger.addEventListener("click", function () {
 });
 
 //nav active link
-const currentPath = window.location.pathname.split("/").pop();
+const currentPath = window.location.pathname.split("/").pop() || "index.html";
 
 const navLinks = document.querySelectorAll("nav ul li a");
 
