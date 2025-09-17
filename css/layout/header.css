@@ -56,6 +56,11 @@ nav > ul {
   gap: 60px;
 }
 
+.active-link {
+  color: #46826b;
+  text-decoration: underline;
+}
+
 .btn-project {
   border-radius: 46px;
   background-color: #4fa481;
