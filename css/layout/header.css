@@ -120,6 +120,8 @@ nav > ul {
 }
 
 .hamburger {
+  background-color: #fff;
+  border: none;
   width: 30px;
   height: 22px;
   display: flex;
@@ -209,6 +211,8 @@ nav > ul {
   text-decoration: none;
   font-size: 24px;
   color: #000;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #mobile-menu a {

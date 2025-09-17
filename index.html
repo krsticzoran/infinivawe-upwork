@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,7 @@
   <body>
     <!-- Header / Navbar -->
     <header>
-      <nav role="navigation">
+      <nav role="navigation" aria-label="Main navigation">
         <a href="index.html" class="logo">
           <img src="assets/images/logo.png" alt="Infinivawe Logo" />
         </a>
@@ -55,26 +55,31 @@
             </div>
           </a>
         </div>
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <button class="hamburger" id="hamburger"
+        aria-label="Open menu"
+        aria-controls="mobile-menu"
+        aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+         </button>
+
         <div id="mobile-menu">
           <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="nos-engagements.html">Nos engagements</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <a href="start-project.html" class="btn-project">
+           <li> <a href="start-project.html" class="btn-project">
               Démarrer un projet
               <img
                 src="assets/icons/up-right-arrow.svg"
                 alt="Arrow Icon"
                 class="icon-arrow"
               />
-            </a>
-            <a href="tel:+3345789635" class="contact-link">
+            </a></li>
+            <li>
+            <a href="tel:+3345789635" class="contact-link" aria-label="Call us at +33 45 78 96 35" >
               <div class="icon-container">
                 <img
                   src="assets/icons/phone.svg"
@@ -87,20 +92,23 @@
                 <p>+33 45 78 96 35</p>
               </div>
             </a>
+          </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
+
+       <!-- hero section -->
+      <section class="hero" role="region" aria-label="Section d’introduction - Votre talent mérite une vitrine rapide, éco-conçue et accessible">
         <div class="hero-content">
           <div class="text-content">
             <h1>
               Votre
               <span class="highlight-primary"
                 >talent mérite
-                <img src="assets/icons/underline.svg" alt="" class="underline"
+                <img src="assets/icons/underline.svg" alt="" role="presentation" class="underline"
               /></span>
               une vitrine rapide, éco-conçue
               <span class="highlight-secondary">et accessible.</span>
@@ -117,34 +125,36 @@
             Nous parler de votre projet
             <img
               src="assets/icons/up-right-arrow.svg"
-              alt="Arrow Icon"
+              alt="" role="presentation"
               class="icon-arrow"
             />
           </a>
         </div>
       </section>
+
       <section class="section-divider">
         <div class="divider-arrow-down-container">
-        <img src="assets/icons/arrow-down.svg" alt="arrow-down" />
+        <img src="assets/icons/arrow-down.svg" alt="" role="presentation" />
       </div>
         <img
           src="assets/images/wave-divider.svg"
-          alt="Wave divider"
+          alt="" role="presentation"
           class="wave-divider"
         />
         <img
           src="assets/images/wave-divider-one.svg"
-          alt="Wave divider"
+          alt="" role="presentation"
           class="wave-divider-one"
         />
       </section>
 
-      <section class="sub-hero">
+       <!-- sub hero section -->
+      <section class="sub-hero" role="region" aria-label="Section secondaire présentant les risques d’un site web mal optimisé">
         <div class="sub-hero-content">
           <div class="sub-hero-image-container">
             <img
               src="assets/images/frustrated-person.jpg"
-              alt="Person frustrated due to poor website performance"
+              alt="Personne frustrée à cause de la mauvaise performance du site web"
             />
           </div>
           <div class="sub-hero-text-container">
@@ -154,18 +164,18 @@
             </h2>
             <div>
               <p>Pas de site ? Vos clients doutent de votre légitimité.</p>
-              <div class="divider"></div>
+              <div class="divider" aria-hidden="true"></div>
 
               <p>
                 Un WordPress bricolé ? Vous donnez lʼimage dʼun prestataire
                 parmi tant dʼautres.
               </p>
-              <div class="divider"></div>
+              <div class="divider" aria-hidden="true"></div>
               <p>
                 Trop lent, mal optimisé ? Vous perdez les prospects les plus
                 exigeants dès la première seconde.
               </p>
-              <div class="divider"></div>
+              <div class="divider" aria-hidden="true"></div>
               <p>
                 Et demain ? <span>Lʼaccessibilité </span>,
                 <span>lʼécoconception</span> et la <span>performance</span>
@@ -177,7 +187,8 @@
         </div>
       </section>
 
-      <section class="features">
+       <!-- features -->
+      <section class="features" role="region" aria-label="Fonctionnalités principales du site web">
         <div class="features-content">
           <div class="features-content-text-container">
             <h2>
@@ -187,7 +198,8 @@
             <div class="features-list">
               <div class="feature-item">
                 <div class="feature-icon-container">
-                  <img src="assets/icons/group1.svg" alt="Éco-conçu icon" />
+                  <img src="assets/icons/group1.svg"   alt=""
+                  role="presentation" />
                 </div>
                 <div class="feature-text">
                   <h5>Éco-conçu</h5>
@@ -199,7 +211,8 @@
               </div>
               <div class="feature-item">
                 <div class="feature-icon-container">
-                  <img src="assets/icons/group2.svg" alt="Accessible icon" />
+                  <img src="assets/icons/group2.svg"   alt=""
+                  role="presentation" />
                 </div>
                 <div class="feature-text">
                   <h5>Accessible</h5>
@@ -213,7 +226,8 @@
                 <div class="feature-icon-container">
                   <img
                     src="assets/icons/group3.svg"
-                    alt="Design premium icon"
+                    alt=""
+                    role="presentation"
                   />
                 </div>
 
@@ -227,7 +241,8 @@
               </div>
               <div class="feature-item">
                 <div class="feature-icon-container">
-                  <img src="assets/icons/group4.svg" alt="Évolutif icon" />
+                  <img src="assets/icons/group4.svg"   alt=""
+                  role="presentation" />
                 </div>
                 <div class="feature-text">
                   <h5>Évolutif</h5>
@@ -242,12 +257,13 @@
           <div class="features-content-image-container">
             <img
               src="assets/images/features-illustration.jpg"
-              aalt="Illustration showing main product features"
+              alt="Illustration des principales fonctionnalités du produit"
               class="features-image"
             />
             <img
               src="assets/images/features-cover.jpg"
-              alt="Product features cover image"
+              alt=""
+              role="presentation"
               class="features-image-cover"
             />
             <div class="feature-image-text">
@@ -256,7 +272,9 @@
           </div>
         </div>
       </section>
-      <section class="benefits-section">
+
+       <!-- benefits section -->
+      <section class="benefits-section" role="region" aria-label="Principaux avantages de notre méthode">
         <div class="benefits-content">
           <div class="benefits-title-container">
             <h2>
@@ -269,9 +287,9 @@
             <div class="benefit-card">
               <div class="card-top-indicator"></div>
               <div class="benefit-card-icon-container">
-                <image
+                <img
                   src="assets//icons/benefit1.svg"
-                  alt="benefit"
+                  alt="" role="presentation"
                   class="benefit-card-icon"
                 />
                 <div class="number-box">01</div>
@@ -283,7 +301,7 @@
             </div>
             <img
               src="assets/icons/right-arrow.svg"
-              alt="Arrow Right"
+              alt="" role="presentation"
               class="benefit-arrow-right"
             />
             <div class="benefit-card">
@@ -291,7 +309,7 @@
               <div class="benefit-card-icon-container">
                 <image
                   src="assets//icons/benefit2.svg"
-                  alt="benefit"
+                  alt="" role="presentation"
                   class="benefit-card-icon"
                 />
                 <div class="number-box">02</div>
@@ -303,7 +321,7 @@
             </div>
             <img
               src="assets/icons/right-arrow.svg"
-              alt="Arrow Right"
+              alt="" role="presentation"
               class="benefit-arrow-right"
             />
             <div class="benefit-card">
@@ -311,7 +329,7 @@
               <div class="benefit-card-icon-container">
                 <image
                   src="assets//icons/benefit3.svg"
-                  alt="benefit"
+                  alt="" role="presentation"
                   class="benefit-card-icon"
                 />
                 <div class="number-box">03</div>
@@ -329,7 +347,7 @@
               <div class="benefit-card-icon-container">
                 <image
                   src="assets//icons/benefit4.svg"
-                  alt="benefit"
+                  alt="" role="presentation"
                   class="benefit-card-icon"
                 />
                 <div class="number-box">04</div>
@@ -341,15 +359,15 @@
             </div>
             <img
               src="assets/icons/right-arrow.svg"
-              alt="Arrow Right"
+              alt="" role="presentation"
               class="benefit-arrow-right"
             />
             <div class="benefit-card">
               <div class="card-top-indicator"></div>
               <div class="benefit-card-icon-container">
-                <image
+                <img
                   src="assets//icons/benefit5.svg"
-                  alt="benefit"
+                  alt="" role="presentation"
                   class="benefit-card-icon"
                 />
                 <div class="number-box">05</div>
@@ -365,7 +383,9 @@
           </div>
         </div>
       </section>
-      <section class="mission-section">
+
+       <!-- mission section-->
+      <section class="mission-section" role="region" aria-label="Mission de l'entreprise">
         <div class="mission-container">
         <div class="mission-text-container">
           <h2>Votre site ne sʼarrête <span>pas à lʼécran</span>.</h2>
@@ -399,18 +419,20 @@
         <div class="mission-image-container">
           <img
             src="assets/images/mission.jpg"
-            alt="Each project contributes meals through ShareTheMeal"
+            alt="Chaque projet contribue à distribuer des repas via ShareTheMeal"
           />
         </div>
         <div class="mission-icon-container">
           <img
             src="assets/icons/mission-icon.svg"
-            alt="Icon of hands holding a heart, symbolizing human impact and solidarity"
+            alt="Mains tenant un cœur, symbolisant l'impact humain et la solidarité"
           />
         </div>
       </div>
       </section>
-      <section class="target-section">
+
+       <!-- target section -->
+      <section class="target-section" role="region" aria-label="Public cible et choix de site">
         <div class="target-section-container">
           <h2>
             <span>Infiniwave</span> sʼadresse à celles et ceux qui voient leur
@@ -427,7 +449,8 @@
             </div>
               <img
                 src="assets/images/decline.jpg"
-                alt="Illustration of rejecting a low-quality or cheap website"
+                alt="Illustration représentant le refus d’un site de faible qualité ou bon marché"
+
               />
             </div>
             <div class="target-content-container">
@@ -439,15 +462,18 @@
             </div>
               <img
                 src="assets/images/accept.jpg"
-                alt="Illustration of choosing a high-quality, professional website"
+                alt="Illustration représentant le choix d’un site professionnel et de haute qualité"
+
               />
             </div>
           </div>
         </div>
       </section>
-      <section class="client-vision-section">
+
+       <!-- client vision section -->
+     <section class="client-vision-section" role="region" aria-label="Vision client">
         <div class="client-vision-image-container">
-          <img src="assets/images/client-vision.jpg" />
+          <img src="assets/images/client-vision.jpg"  alt="Client visualisant un site professionnel sur un ordinateur portable" /> />
         </div>
         <div class="client-vision-text-container">
           <h2>Imaginez votre prochain prospect…</h2>
@@ -460,11 +486,13 @@
       </div>
     </div>
       </section>
-      <section class="subscription-section">
+
+       <!--subscription section -->
+      <section class="subscription-section" role="region" aria-label="Message de la fondatrice">
         <div class="subscription-content">
           <image
             src="assets/images/subscription-image.png"
-            alt="Subscription image"
+            alt="Illustration représentant un utilisateur intéressé par un site web crédible"
             class="subscription-image"
           />
           <div class="subscription-text-container">
@@ -484,43 +512,50 @@
       </section>
     </main>
 
-   
-    <footer>
-        <div class="footer-top">
+    <!-- footer -->
+    <footer role="contentinfo">
+      <div class="footer-top">
         <div class="footer-about">
-            <a href="index.html" class="logo">
-                <img src="assets/images/logo.png" alt="Infinivawe Logo" />
-              </a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              <div class="footer-about-socials">
-             
-                
-                <a href="#"><img src="assets/icons/instagram.png" alt="Instagram Icon" /></a>
-                <a href="#"><img src="assets/icons/linkedin.png" alt="LinkedIn Icon" /></a>
-              </div>
+          <a href="index.html" class="logo">
+            <img src="assets/images/logo.png" alt="Logo Infinivawe" />
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+          <div class="footer-about-socials">
+            <a href="#" aria-label="Suivez-nous sur Instagram">
+              <img src="assets/icons/instagram.png" alt=""
+            /></a>
+            <a href="#" aria-label="Suivez-nous sur LinkedIn"
+              ><img src="assets/icons/linkedin.png" alt=""
+            /></a>
+          </div>
         </div>
-        <div class="footer-links"><h5>Liens rapides</h5>
-            <div class="footer-devider"></div>
-        <ul>
+        <div class="footer-links">
+          <h5>Liens rapides</h5>
+          <div class="footer-devider" aria-hidden="true"></div>
+          <nav aria-label="Navigation secondaire – Liens rapides">
+          <ul>
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Nos engagements</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
-        </ul>
+          </ul>
+        </nav>
         </div>
         <div class="footer-links">
-            <h5>Informations légales</h5>
-            <div class="footer-devider"></div>
-            <ul>
-               <li><a href="#"> Mentions légales</a></li>
+          <h5>Informations légales</h5>
+          <div class="footer-devider" aria-hidden="true"></div>
+          <nav aria-label="Navigation secondaire – Informations légales">
+          <ul>
+            <li><a href="#"> Mentions légales</a></li>
             <li><a href="#">Politique de confidentialité </a></li>
-            </ul>
+          </ul>
+        </nav>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <img src="assets/images/footer-devider.svg" alt="Footer Divider" />
+      </div>
+      <div class="footer-bottom">
+        <img src="assets/images/footer-devider.svg" alt="" aria-hidden="true" />
         <p>Infiniwave © Tous droits réservés.</p>
-    </div>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>

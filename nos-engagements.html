@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,14 +21,15 @@
   </head>
   <body>
     <!-- Header / Navbar -->
+     
     <header>
-      <nav role="navigation">
+      <nav role="navigation" aria-label="Main navigation">
         <a href="index.html" class="logo">
           <img src="assets/images/logo.png" alt="Infinivawe Logo" />
         </a>
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="/nos-engagements.html">Nos engagements</a></li>
+          <li><a href="nos-engagements.html">Nos engagements</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -55,26 +56,31 @@
             </div>
           </a>
         </div>
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <button class="hamburger" id="hamburger"
+        aria-label="Open menu"
+        aria-controls="mobile-menu"
+        aria-expanded="false">
+         <span></span>
+         <span></span>
+        <span></span>
+        </button>
+
         <div id="mobile-menu">
           <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="nos-engagements.html">Nos engagements</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <a href="start-project.html" class="btn-project">
+           <li> <a href="start-project.html" class="btn-project">
               Démarrer un projet
               <img
                 src="assets/icons/up-right-arrow.svg"
                 alt="Arrow Icon"
                 class="icon-arrow"
               />
-            </a>
-            <a href="tel:+3345789635" class="contact-link">
+            </a></li>
+            <li>
+            <a href="tel:+3345789635" class="contact-link" aria-label="Call us at +33 45 78 96 35" >
               <div class="icon-container">
                 <img
                   src="assets/icons/phone.svg"
@@ -87,20 +93,23 @@
                 <p>+33 45 78 96 35</p>
               </div>
             </a>
+          </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="title-section">
+       <!-- title section -->
+      <section class="title-section" role="region" aria-label="Titre de la section Nos engagements">
         <h1>Nos engagements</h1>
       </section>
 
-      <section class="impact-section">
+       <!-- imapact section -->
+      <section class="impact-section" role="region" aria-label="Impact de votre site web">
         <div class="impact-section-container">
           <div class="impact-image-container">
-            <img src="assets/images/impact-img.jpg" />
+            <img src="assets/images/impact-img.jpg" alt="Deux femmes assises face à face discutant d'un site web ; l'image illustre comment un site accessible et moderne peut attirer des clients" />
           </div>
           <div class="impact-text-container">
             <h2>
@@ -119,7 +128,7 @@
                 inaccessible nʼinspire pas confiance.
               </p>
               <p>
-                <img src="assets/icons/impact-accept.svg" />
+                <img src="assets/icons/impact-accept.svg" role="presentation" />
                 Chez <span>Infiniwave</span>, nous pensons qu’un site doit être
                 efficace pour votre activité tout en respectant la planète et
                 ses utilisateurs.
@@ -131,12 +140,15 @@
                 src="assets/icons/up-right-arrow.svg"
                 alt="Arrow Icon"
                 class="icon-arrow"
+                role="presentation"
               />
             </a>
           </div>
         </div>
       </section>
-      <section class="avantages-section">
+
+       <!-- advantages section -->
+      <section class="avantages-section" role="region" aria-label="Avantages des sites web rapides, légers et durables">
         <div class="advantages-container">
         <div class="advantages-text-container">
           <h2>
@@ -154,7 +166,9 @@
           </div>
           <div class="advantages-container-bottom-paragraph">
             <div class="advantages-container-bottom-paragraph-card">
-              <div class="advantages-container-icon"><img src="assets/icons/advantage1.svg" /></div>
+              <div class="advantages-container-icon">
+                <img src="assets/icons/advantage1.svg" alt="" role="presentation" />
+              </div>
               
               <div class="advantages-container-bottom-text">
                 <h5>Des pages ultra-rapides,</h5>
@@ -162,7 +176,9 @@
               </div>
             </div>
             <div class="advantages-container-bottom-paragraph-card">
-              <div class="advantages-container-icon"><img src="assets/icons/advantage2.svg" /></div>
+              <div class="advantages-container-icon">
+                <img src="assets/icons/advantage2.svg" alt="" role="presentation" />
+              </div>
               <div class="advantages-container-bottom-text">
                 <h5>Un hébergement vert,</h5>
                 <p>
@@ -171,7 +187,9 @@
               </div>
             </div>
             <div class="advantages-container-bottom-paragraph-card">
-              <div class="advantages-container-icon"><img src="assets/icons/advantage3.svg" /></div>
+              <div class="advantages-container-icon">
+                <img src="assets/icons/advantage3.svg" alt="" role="presentation"/>
+              </div>
               <div class="advantages-container-bottom-text">
                 <h5>un code optimisé et durable</h5>
                 <p>qui pèse moins, se charge mieux et  soutient votre référencement naturel.</p>
@@ -180,15 +198,18 @@
           </div>
           
         </div>
-        <div class="advantages-image-container"><img src="assets/images/advantages-image.jpg" /></div>
+        <div class="advantages-image-container">
+          <img src="assets/images/advantages-image.jpg" alt="Ordinateur portable affichant un site web rapide, léger et durable sur un bureau"/>
+        </div>
         </div>
         </section>
       </section>
-      <section class="accessibility-section">
-        
+
+       <!-- accessibility section -->
+      <section class="accessibility-section" role="region" aria-label="Accessibilité du site"> 
         <div class="accessibility-container">
           <div class="accessibility-image-container">
-            <image src="assets/images/accessibility-image.svg"/>
+            <img src="assets/images/accessibility-image.svg" alt="Illustration d’un site web accessible et inclusif"/>
           </div>
           <div class="accessibility-text-container">
             <h2>Un web utilisable <span>par tous</span>.</h2>
@@ -201,7 +222,9 @@
           </div>
         </div>
       </section>
-      <section class="solidarity-section">
+
+        <!-- solidarity section -->
+      <section class="solidarity-section" role="region" aria-label="Solidarité">
         <div class="solidarity-container">
           <div class="solidarity-text-container">
             <h2>Un projet qui dépasse le <span>digital</span>.</h2>
@@ -222,50 +245,56 @@
           <p>Et si vous voulez aller plus loin, vous pouvez contribuer directement en un clic.</p>
           </div>
           <div class="solidarity-image-container">
-            <img src="assets/images/solidarity-image.jpg" />
+            <img src="assets/images/solidarity-image.jpg" alt="Groupe de personnes joignant leurs mains, symbolisant l’engagement solidaire d’Infiniwave avec Share The Meal" />
           </div>
           <div class="solidarity-right-bg"></div>
         </div>
       </section>
-      <section class="founder-message-section">
+
+      <!-- founder section -->
+      <section class="founder-message-section" role="region" aria-label="Message de la fondatrice">
         <div class="founder-message-container">
-          <img  src="assets/icons/founder-icon1.svg" />
+          <img  src="assets/icons/founder-icon1.svg"  alt="" role="presentation"/>
           <p class="founder-first-p">Un site aide une entreprise à grandir. Jʼai choisi quʼil puisse aussi soutenir la  planète et ceux qui en ont besoin.</p>
           <div class="founder-separator">
             <div></div>
-          <img src="assets/icons/founder-icon2.svg" />
+          <img src="assets/icons/founder-icon2.svg" alt="" role="presentation"/>
         </div>
           <p class="founder-second-p"> Siham Ouanguich,   fondatrice d’Infiniwave</p>
         </div>
       </section>
-      <section class="value-section">
+
+      <!-- value section -->
+      <section class="value-section" role="region" aria-label="Solidarité">
         <div class="value-section-container">
         <h2> Ces engagements ne sont pas seulement éthiques.</h2>
         <h2>Ils sont aussi stratégiques pour votre activité :</h2>
         <div class="value-text-container">
           <div >
-            <img src="assets/icons/value-icon1.svg" />
+            <img src="assets/icons/value-icon1.svg"  alt="" role="presentation" />
             <p>Différenciation</p>
             <p>Là où vos concurrents affichent encore des sites datés,  vous prenez une longueur d’avance.</p>
           </div>
           <div class="value-card-middle">
-            <img src="assets/icons/value-icon2.svg" />
+            <img src="assets/icons/value-icon2.svg" alt="" role="presentation" />
             <p>Crédibilité</p>
           <p>Un site qui inspire confiance dès la première seconde.</p>
           </div>
           <div>
-            <img src="assets/icons/value-icon3.svg" />
+            <img src="assets/icons/value-icon3.svg" alt="" role="presentation"  />
            <p>Cohérence</p>
            <p>Des valeurs visibles, pas seulement écrites sur une page.</p>
           </div>
         </div>
       </div>
       </section>
-      <section class="subscription-section">
+
+      <!-- subscription section -->
+      <section class="subscription-section" role="region" aria-label="Message de la fondatrice">
         <div class="subscription-content">
           <image
             src="assets/images/subscription-image.png"
-            alt="Subscription image"
+            alt="Illustration représentant un utilisateur intéressé par un site web crédible"
             class="subscription-image"
           />
           <div class="subscription-text-container">
@@ -285,43 +314,49 @@
       </section>
     </main>
 
-    <footer>
+
+      <!-- footer -->
+    <footer role="contentinfo">
       <div class="footer-top">
         <div class="footer-about">
           <a href="index.html" class="logo">
-            <img src="assets/images/logo.png" alt="Infinivawe Logo" />
+            <img src="assets/images/logo.png" alt="Logo Infinivawe" />
           </a>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
           <div class="footer-about-socials">
-            <a href="#"
-              ><img src="assets/icons/instagram.png" alt="Instagram Icon"
+            <a href="#" aria-label="Suivez-nous sur Instagram">
+              <img src="assets/icons/instagram.png" alt=""
             /></a>
-            <a href="#"
-              ><img src="assets/icons/linkedin.png" alt="LinkedIn Icon"
+            <a href="#" aria-label="Suivez-nous sur LinkedIn"
+              ><img src="assets/icons/linkedin.png" alt=""
             /></a>
           </div>
         </div>
         <div class="footer-links">
           <h5>Liens rapides</h5>
-          <div class="footer-devider"></div>
+          <div class="footer-devider" aria-hidden="true"></div>
+          <nav aria-label="Navigation secondaire – Liens rapides">
           <ul>
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Nos engagements</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
+        </nav>
         </div>
         <div class="footer-links">
           <h5>Informations légales</h5>
-          <div class="footer-devider"></div>
+          <div class="footer-devider" aria-hidden="true"></div>
+          <nav aria-label="Navigation secondaire – Informations légales">
           <ul>
             <li><a href="#"> Mentions légales</a></li>
             <li><a href="#">Politique de confidentialité </a></li>
           </ul>
+        </nav>
         </div>
       </div>
       <div class="footer-bottom">
-        <img src="assets/images/footer-devider.svg" alt="Footer Divider" />
+        <img src="assets/images/footer-devider.svg" alt="" aria-hidden="true" />
         <p>Infiniwave © Tous droits réservés.</p>
       </div>
     </footer>
